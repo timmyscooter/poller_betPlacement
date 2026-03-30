@@ -1,0 +1,16 @@
+{
+  "name": "bet-capture",
+  "version": "1.0.0",
+  "description": "Captures sportsbook bet placement API flows",
+  "type": "module",
+  "scripts": {
+    "capture:dk": "node capture-bet-flow.mjs draftkings",
+    "capture:fd": "node capture-bet-flow.mjs fanduel",
+    "capture:mgm": "node capture-bet-flow.mjs betmgm",
+    "capture:czr": "node capture-bet-flow.mjs caesars",
+    "capture:365": "node capture-bet-flow.mjs bet365"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0"
+  }
+}
